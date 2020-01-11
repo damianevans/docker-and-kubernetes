@@ -13,3 +13,10 @@ test('renders finbarr saunders', () => {
   const linkElement = getByText(/Fnarr fnarr\. Snibbet/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('renders finbarr saunders', () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/Fnarr fnarr\. Snibbet/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
