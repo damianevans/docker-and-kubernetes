@@ -1,10 +1,10 @@
 language: node_js
 sudo: required
 services:
-  - docker
+    - docker
 
 before_install:
-  - docker build -t darthdamo/docker-react -f Dockerfile.dev .
+    - docker build -t darthdamo/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run darthdamo/docker-react npm run test -- --coverage
+    - docker run darthdamo/docker-react npm run test -- --coverage
