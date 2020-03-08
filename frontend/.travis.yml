@@ -2,5 +2,8 @@ sudo: required
 services:
   - docker
 
-before_install
+before_install:
   - docker build -t darthdamo/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run darthdamo/docker-react npm run test -- --coverage
