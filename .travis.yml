@@ -13,3 +13,6 @@ before_install:
 
 script:
     - docker run -e CI=true darthdamo/docker-react npm run test
+
+deploy:
+    provider: azure_web_apps
