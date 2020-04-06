@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import Biffa from './Biffa';
 import * as serviceWorker from './serviceWorker';
+import Branch from './Branch';
 
 ReactDOM.render(
     <>
-        <App /><Biffa />
+        <App /><Biffa /><Branch/>
     </>, 
     document.getElementById('root'));
 
