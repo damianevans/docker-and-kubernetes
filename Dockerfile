@@ -9,7 +9,7 @@ COPY package.json .
 RUN npm install
 
 COPY . .
-
+ENV CHOKIDAR_USEPOLLING=true
 RUN npm run build
 
 # /app/build <--- will contain all of our stuff from this build phase
