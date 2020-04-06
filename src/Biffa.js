@@ -3,10 +3,10 @@ import logo from './logo.svg';
 
 function Biffa() {
   return (
-    <div>
-      <header>
+    <div className="App">
+      <header className="App-header">
       <p>Are yers callin' us a heemasex like?</p>
-      <p>06/04/2020 @23:20</p>
+      <p>06/04/2020 @23:37</p>
       </header>
     </div>
   );
